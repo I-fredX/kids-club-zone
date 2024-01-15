@@ -1,0 +1,42 @@
+.text{
+    font-size: 16px;
+  }
+
+@media (max-width:900px){
+    .text{
+    font-size: 8px;
+    }
+}
+
+@media (max-width: 700px){
+  .text{
+    font-size: 6px;
+  }
+}
+
+.frame6 h1 {
+    font-family: Inter;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -3.488415479660034px;
+    text-align: left;
+  }
+  
+  .frame6 h1 span {
+    background: linear-gradient(to right, #f9c8bf, #f87c61, #ab26f8, #d75efc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1em;
+    
+    
+  }
+
+  .frame6 p {
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 1em;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }

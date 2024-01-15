@@ -2,6 +2,7 @@
   
  .frame105 {
     max-width: 1254px;
+    min-width: 350px;
     height: 620px;
     margin: 0 auto;
     display: flex;
@@ -13,14 +14,15 @@
   
   .frame6 {
     width: 47%;
-    height: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    align-self: center;
-    gap: 20px;
+    gap: 2.625em;
   }
   
+
+
   .frame38 {
     width: 76%;
     height: 44px;
@@ -45,31 +47,11 @@
   
   
   }
-  
-  .frame6 h1 {
-    font-family: Inter;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 77px;
-    letter-spacing: -3.488415479660034px;
-    text-align: left;
-  }
-  
-  .frame6 h1 span {
-    background: linear-gradient(to right, #f9c8bf, #f87c61, #ab26f8, #d75efc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  .frame6 p {
-    font-weight: 400;
-    color: #1e1e1e;
-    font-size: 16px;
-    line-height: 23px;
-    margin-bottom: 10px;
-  }
+
   .hero-button {
     color: white;
+    width: 8.125em;
+    height: 2.6875em;
     border-radius: 8px;
     border: none;
     background: var(
@@ -84,11 +66,16 @@
     );
     padding: 12px 20px 12px 20px;
     font-family: Inter;
-    width: 130px;
+    /* width: 130px; */
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
   }
+  
+  /* @media(max-width:900px){
+    .hero-button{font-size: 14px !important;}
+  } */
+
   
   .introduction-image {
     width: 50%;
@@ -103,12 +90,11 @@
   
   /* Mobile View */
   @media (max-width: 900px) {
-  
-    
-  
+
     .frame105 {
-      flex-direction: column;
+      /* flex-direction: column; */
       gap: 10px;
+      height: auto !important;
   
     }
   
@@ -120,4 +106,21 @@
     
   
     
+  }
+  @media (max-width: 600px) {
+    /* .frame105{
+         flex-direction: column;
+        gap: 10px;
+        height: auto!important;; */
+    
+
+    .frame38{
+        border-radius:9px;
+        width:100%;
+        font-size:20px;
+    }
+
+    .frame36{
+        gap: 4px;
+    }
   }
